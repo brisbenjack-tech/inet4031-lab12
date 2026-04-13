@@ -31,3 +31,6 @@ EXPOSE 80
 # Syntax: CMD ["command", "flag-name", "flag-value"]
 
 # CMD ["___________", "___________", "___________"]
+
+RUN a2enmod proxy proxy_http
+CMD ["apache2ctl", "-D", "FOREGROUND"]
